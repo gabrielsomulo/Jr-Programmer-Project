@@ -67,7 +67,6 @@ public abstract class Unit : MonoBehaviour,
 
     public virtual void GoTo(Vector3 position)
     {
-        //we don't have a target anymore if we order to go to a random point.
         m_Target = null;
         m_Agent.SetDestination(position);
         m_Agent.isStopped = false;
